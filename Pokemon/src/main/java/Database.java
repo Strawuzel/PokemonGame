@@ -52,7 +52,8 @@ public class Database {
     }
 
     public void readAttacksCSV() throws IOException {
-        File attackCSV = new File("src\\main\\resources\\CSV\\Attacks.csv");
+        File path = new File("");
+        File attackCSV = new File("Pokemon\\src\\main\\resources\\CSV\\Attacks.csv");
         Scanner fileScanner = new Scanner(attackCSV);
         ArrayList<String[]> databaseUnsplit = new ArrayList<>();
         for (int i = 0; i < 218; i++) {
@@ -77,7 +78,7 @@ public class Database {
     }
 
     public void readEffectivenessCSV() throws IOException {
-        File effectivenessCSV = new File("src\\main\\resources\\CSV\\Effectiveness.csv");
+        File effectivenessCSV = new File("Pokemon\\src\\main\\resources\\CSV\\Effectiveness.csv");
         Scanner fileScanner = new Scanner(effectivenessCSV);
         ArrayList<String[]> databaseUnsplit = new ArrayList<>();
         for (int i = 0; i < 19; i++) {
@@ -114,7 +115,7 @@ public class Database {
     }
 
     public void readPokemonCSV() throws FileNotFoundException {
-        File pkmnCSV = new File("src\\main\\resources\\CSV\\Pokemon.csv");
+        File pkmnCSV = new File("Pokemon\\src\\main\\resources\\CSV\\Pokemon.csv");
         Scanner fileScanner = new Scanner(pkmnCSV);
         ArrayList<String[]> databaseUnsplit = new ArrayList<>();
         for (int i = 0; i < 152; i++) {
